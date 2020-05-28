@@ -1,5 +1,5 @@
 #Samba share for Raspberry Pi
-FROM balenalib/raspberrypi4-64-debian:latest
+FROM balenalib/armv7hf-debian:stretch AS src
 
 ENV DEBIAN_FRONTEND noninteractive
 
