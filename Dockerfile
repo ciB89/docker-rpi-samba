@@ -3,7 +3,10 @@ FROM balenalib/armv7hf-debian:stretch AS src
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get upgrade -y
+COPY VERSION .
+
+RUN apt-get update \
+  && apt-get upgrade -y
 RUN apt-get install -y --no-install-recommends samba-common-bin samba
 
 ADD run.sh /run.sh
