@@ -1,5 +1,6 @@
 #Samba share for Raspberry Pi
-FROM balenalib/armv7hf-debian:stretch AS src
+FROM arm32v7/debian:buster-slim
+LABEL io.balena.architecture="armv7hf"
 
 ENV DEBIAN_FRONTEND noninteractive
 
