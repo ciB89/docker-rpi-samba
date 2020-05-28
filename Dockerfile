@@ -1,6 +1,6 @@
 #Samba share for Raspberry Pi
-FROM arm32v7/debian:buster-slim
-LABEL io.balena.architecture="armv7hf"
+FROM balenalib/aarch64-debian:buster-build
+LABEL io.balena.device-type="raspberrypi4-64"
 
 ENV DEBIAN_FRONTEND noninteractive
 
